@@ -1,0 +1,20 @@
+{
+    "hrq@vocalguard.com": {
+        "images": [
+            {
+                "temp_path": "temp_img/hrqvocalguard.com_temp_image1.png",
+                "user_path": "userfile/hrq@vocalguard.com/img/hrqvocalguard.com_image1.png"
+            },
+            {
+                "temp_path": "temp_img/hrqvocalguard.com_temp_image2.png",
+                "user_path": "userfile/hrq@vocalguard.com/img/hrqvocalguard.com_image2.png"
+            },
+            {
+                "temp_path": "temp_img/hrqvocalguard.com_temp_image3.png",
+                "user_path": "userfile/hrq@vocalguard.com/img/hrqvocalguard.com_image3.png"
+            }
+        ],
+        "verification_result": true,
+        "reason": "good"
+    }
+}

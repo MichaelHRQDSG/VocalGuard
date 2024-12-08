@@ -1,0 +1,116 @@
+/* Slider 基础样式 */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 80px;
+  /* border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); */
+}
+
+.slider-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  position: relative;
+  min-width: 100%;
+}
+
+.slider-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* 图片上文字和按钮的样式 */
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-text h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.slider-text p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.slider-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-button:hover {
+  background-color: #005bb5;
+}
+
+/* 转换点的圆形样式 */
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 防止圆点被拉伸 */
+  margin-top: 10px;
+}
+
+.slider-dot {
+  display: inline-block; /* 确保宽高生效 */
+  width: 8px ;
+  height: 8px ;
+  margin: 0 4px;
+  border-radius: 50%; /* 设置为圆形 */
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-dot.active,
+.slider-dot:hover {
+  background-color: #0070f3;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-arrow.left {
+  left: 10px;
+}
+
+.slider-arrow.right {
+  right: 10px;
+}
+
+.slider-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
